@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/bricks"
+    tools:context="kunal.expensify.Login"
+    android:gravity="center"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_linearlayout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/expensify_logo"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/imageView" />
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint=" Email"
+                android:drawableLeft="@drawable/user"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_alignParentTop="true"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/email"
+                />
+
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/pswd"
+            android:ems="10"
+            android:id="@+id/password"
+            />
+
+        <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:background="#00C4B0"
+        android:id="@+id/login" />
+    </LinearLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/googleLogin">
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:text="@string/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:autoLink="all"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:id="@+id/signup"
+        android:layout_weight="0.24" />
+
+
+</LinearLayout>
